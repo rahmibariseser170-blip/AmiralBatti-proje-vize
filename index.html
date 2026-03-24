@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amiral Battı</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="ust-bilgi">
+    <h1>AMİRAL BATTI</h1>
+    <div class="ayarlar">
+      <label for="zorluk">Zorluk Seviyesi: </label>
+      <select id="zorluk">
+        <option value="kolay">Kolay</option>
+        <option value="orta" selected>Orta</option>
+        <option value="zor">Zor</option>
+      </select>
+    </div>
+    <div class="skor-alani">Skor: <span id="skor-gosterge">0</span></div>
+    <div id="bilgi-mesaji">Gemilerini tersaneden alıp haritaya yerleştir!</div>
+    <button id="yeniden-oyna-butonu" style="display: none;">Yeniden Oyna</button>
+  </div>
+
+  <div class="oyun-konteyner">
+    
+    <div class="kayit-paneli">
+      <h3>Savaş Kaydı</h3>
+      <ul id="savas-kaydi-listesi"></ul>
+    </div>
+
+    <div class="savas-alani">
+      <div class="oyuncu-paneli">
+        <h3>Senin Filon</h3>
+        <div id="oyuncu-haritasi" class="harita"></div>
+        
+        <div id="tersane">
+          <button id="yon-degistir-butonu">Yön: Yatay</button>
+          <div id="gemi-bekleme-alani"></div>
+        </div>
+      </div>
+      
+      <div class="oyuncu-paneli dusman-paneli" id="dusman-alani">
+        <h3>Düşman Filosu</h3>
+        <div id="dusman-haritasi" class="harita"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
